@@ -1,0 +1,14 @@
+.weather-info {
+  color: rgb(54, 58, 58);
+  font-size: 26px;
+}
+.error {
+  color: rgb(54, 58, 58);
+  font-size: 26px;
+}
+
+@media (max-width: 820px) {
+  .weather-info p, .weather-div p {
+    font-size: 18px;
+  }
+}

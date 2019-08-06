@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rgba(102,238,240,1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(102,238,240,1) 0%, rgba(102,238,240,0.89) 50%, rgba(234,240,106,0.78) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(102,238,240,1)), color-stop(50%, rgba(102,238,240,0.89)), color-stop(100%, rgba(234,240,106,0.78)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(102,238,240,1) 0%, rgba(102,238,240,0.89) 50%, rgba(234,240,106,0.78) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(102,238,240,1) 0%, rgba(102,238,240,0.89) 50%, rgba(234,240,106,0.78) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(102,238,240,1) 0%, rgba(102,238,240,0.89) 50%, rgba(234,240,106,0.78) 100%);
+  background: radial-gradient(ellipse at center, rgba(102,238,240,1) 0%, rgba(102,238,240,0.89) 50%, rgba(234,240,106,0.78) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66eef0', endColorstr='#eaf06a', GradientType=1 );
+}
+#root {
+  width: 60vw;
+  margin: 20vh auto; /* Выравниваем по центру */
+  background-color: rgb(123, 216, 233);
+  -webkit-box-shadow: -7px 10px 8px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -7px 10px 8px 0px rgba(0,0,0,0.75);
+  box-shadow: -7px 10px 8px 0px rgba(0,0,0,0.75);
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.image-div {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: rgb(218, 219, 219);
+  width: 50vw;
+  height: 55vh;
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+   url('./img/bg1.png') center center no-repeat;
+  flex-basis: 40%;
+}
+.content {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 820px) {
+  h1{
+    font-size: 22px;
+  }
+}
+@media (max-width: 720px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+  }
+  .image-div {
+    background: rgb(82, 187, 206);
+    font-size: 16px;
+    width: auto;
+  }
+}

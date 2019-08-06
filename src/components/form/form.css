@@ -1,0 +1,75 @@
+.weather-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 35%;
+}
+
+.weather-form input {
+  flex-basis: 90%;
+  background-color: rgb(123, 216, 233);
+  border: none;
+  outline: none;
+  padding: 10px 0 0 0;
+  border-bottom: 2px solid rgb(54, 52, 52);
+  color: rgb(55, 65, 65);
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+
+.weather-form button {
+  align-self: flex-end;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  color: rgb(218, 219, 219);
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(57, 76, 129);
+  box-shadow: 0 -3px rgb(43, 60, 105) inset;
+  transition: 0.2s;
+}
+.weather-form button:hover {
+  background: rgb(88, 45, 138);
+  cursor: pointer;
+}
+.weather-form button:active {
+  background: rgb(71, 35, 112);
+  box-shadow: 0 3px rgb(61, 25, 87) inset;
+}
+
+@media (max-width: 550px) {
+  .weather-form {
+    flex-direction: row;
+  }
+  .weather-form input {
+    font-size: 16px;
+  }
+  .weather-form button {
+    align-self: center;
+    font-size: 12px;
+  }
+}
+@media (max-width: 370px) {
+  .weather-form input {
+    font-size: 14px;
+    width: 5vw;
+  }
+}
+@media (max-width: 660px) and (operation: landscape) {
+
+  .weather-form button {
+    font-size: 8px;
+  }
+  .image-div {
+    width: auto;
+    flex-basis: 25%;
+  }
+  .content {
+    flex-basis: 75%;
+  }
+}
